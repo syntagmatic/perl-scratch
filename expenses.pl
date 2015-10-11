@@ -20,6 +20,7 @@ while ( my $line = $parse->fetch ) {
 }
 
 # sort categories by total expense
+print "Top spending categories:\n";
 foreach $key (sort { $expenses{$b} <=> $expenses{$a} } keys %expenses) {
   print $expenses{$key} . "\t$key\n";
 }
