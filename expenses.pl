@@ -4,7 +4,6 @@
 # Prints spending by category, total spent, and savings rate
 
 use Parse::CSV;
-use Data::Printer;
 
 $parse = Parse::CSV->new(
     file       => 'secret/expenses.csv',
